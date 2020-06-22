@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/playground.css">
+    <title>Playground JS</title>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-4"> Playground Javascript </h1>
+            <p class="lead">Você será capaz de concluir todos os desafios? :P</p>
+        </div>
+    </div>
+    <div class="container">
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne" id="headingOne">
+                    <h5 class="mb-0">
+                        Desafio 1
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <p> Possuo um input, mas preciso que o valor escrito nele esteja explícito!! Decidi usar um
+                            elemento output para mostrar o resultado, mas o valor não atualiza nele ao trocar o valor no
+                            input! Como resolver isso usando JS?</p>
+
+                        <!-- Área do Desafio 1 -->
+                        <form>
+                            <input type="range" id="valor" value="100" step="2" min="0" max="200">
+                            <output id="resposta" for="valor">50</output>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="false" aria-controls="collapseTwo" id="headingTwo">
+                    <h5 class="mb-0">
+                        Desafio 2
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <p> Quero atualizar o valor total de uma compra de acordo com a quantidade. Todavia, pediram
+                            para você tratar isso direto no front! Como fazer isso utilizando apenas JS?</p>
+
+                        <p>Regras:</p>
+                        <ul>
+                            <li>Não pode mudar o valor escrito direto no HTML!</li>
+                            <li>O valor precisa estar formatado corretamente: R$ XX,XX</li>
+                        </ul>
+
+
+                        <!-- Área do Desafio 2 -->
+                        <p> <strong>Preço do Produto</strong> </p>
+                        <p id="preco">R$ 49,99</p>
+                        <form>
+                            <label for="qtde">Quantidade</label>
+                            <input type="number" class="form-control" id="qtde" value="1" min="0">
+                        </form>
+                        <br>
+                        <p><strong>Total:</strong></p>
+                        <p id="total">R$ 49,99</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <span class="text-white">Feito para a turma do WD-43</span>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+        
+    <script src="js/playground.js"></script>
+
+</body>
+
+</html>
